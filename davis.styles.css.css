@@ -146,6 +146,9 @@ footer .icon{
     @media (prefers reduced motion) {
         @-webkit-keyframes icon-animation {
             0% {font-variation-settings: "TIME" 1;}
+            @keyframses icon-animation {
+                0% {font-variation-settings: "TIME" 1;}
+            }
     }
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
@@ -302,17 +305,21 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+@media screen and (min-width:1380px){
+     img{
         width: 300px;
         max-width: 300px;
-    } */
+    } 
+}
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width:1430px) {
+
+header, footer{
         background-color: var(--orange);
         padding-left: 5%;
     }
@@ -377,5 +384,6 @@ img{
 
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
-    } */
+    } 
+}
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
